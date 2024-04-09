@@ -23,10 +23,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(20.0),
             child: GestureDetector(
               onTap: () {
-                Navigator.push(context,MaterialPageRoute(builder: (context) => const Search(),));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Search(),
+                    ));
               },
               child: const Icon(
                 Icons.search,
@@ -57,8 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           ));
                     },
                     child: Container(
-                      decoration: decoration('https://image.tmdb.org/t/p/w500${movies.posterPath}'),
-                      
+                      decoration: decoration(
+                          'https://image.tmdb.org/t/p/w500${movies.posterPath}'),
                     ),
                   ))
             ], options: carouselOptions),
@@ -90,9 +94,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           height: 200,
                           width: 120,
-                            margin: const EdgeInsets.all(10),
-                            decoration: decoration('https://image.tmdb.org/t/p/w500${movies.posterPath}'),
-                            ),  
+                          margin: const EdgeInsets.all(10),
+                          decoration: decoration(
+                              'https://image.tmdb.org/t/p/w500${movies.posterPath}'),
+                        ),
                       ))
                 ],
               ),
@@ -122,13 +127,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                 builder: (context) => Details(movies: movies),
                               ));
                         },
-                        child: Container(margin: const EdgeInsets.all(10),
+                        child: Container(
+                          margin: const EdgeInsets.all(10),
                           height: 200,
                           width: 120,
-                          
-                            decoration: decoration('https://image.tmdb.org/t/p/w500${movies.posterPath}'),
-                            
-                            ),
+                          decoration: decoration(
+                              'https://image.tmdb.org/t/p/w500${movies.posterPath}'),
+                        ),
                       ))
                 ],
               ),
@@ -159,11 +164,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               ));
                         },
                         child: Container(
-                            height: 200,
+                          height: 200,
                           width: 120,
-                            margin: const EdgeInsets.all(10),
-                            decoration: decoration('https://image.tmdb.org/t/p/w500${movies.posterPath}'),
-                          ),
+                          margin: const EdgeInsets.all(10),
+                          decoration: decoration(
+                              'https://image.tmdb.org/t/p/w500${movies.posterPath}'),
+                        ),
                       ))
                 ],
               ),
